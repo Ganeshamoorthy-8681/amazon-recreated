@@ -259,7 +259,7 @@ input[type="radio"]:checked ~ .new-radio:after{
 display: block;
 }
 
-.checked{
+.checked-radio {
 width: 100%;
 height: 10%;
 margin-bottom: 10px;
