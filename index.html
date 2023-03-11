@@ -1,0 +1,2380 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Online Shopping Site in India</title>
+      <link rel="shortcut icon" href="images/amazon_favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="app.css">
+      <link rel="stylesheet" href="/home/ganeshamoorthy/Downloads/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div id="preloader"> <img src="videos/Spinner-1s-200px.gif"></div>
+      <!-- navigation bar -1 base -->
+      <nav id="nav-bar">
+         <!-- naviagtion bar -1 left side  -->
+         <div id="nav-left-side">
+            <div id="logo-link" class="make-border-transparent">
+               <a href="https://www.amazon.in" target="_blank">
+               <img src="images/amazon_logo.png" style="width: 96%; height: 45px;">
+               </a>
+            </div>
+            <div id="location-div" class="make-element-flex-centered make-border-transparent">
+               <img src="images/location.png" id="location-icon">
+               <div style="line-height: 1;">
+                  <span style="color:lightgray;" class="font-size-top">Hello</span><br>
+                  <span class="font-color-white font-size-bottom"><strong>Select your address</strong></span>
+               </div>
+            </div>
+         </div>
+         <!-- navigation-1 center side -->
+         <div id="nav-center-side">
+            <div id="search-container" class="make-border-transparent">
+               <select name="" id="search-category" title="search-in">
+                  <option value="" selected disabled hidden>All</option>
+                  <option value="All categories">All categories</option>
+                  <option value="alexa skills">alexa skills</option>
+                  <option value="amazon devices">amazon devices</option>
+                  <option value="dress">dress</option>
+               </select>
+               <input type="search" name="q" id="search-bar" placeholder="Search Amazon.in">
+               <button id="search-icon-button">
+               <i class="fa fa-search" style="font-size:large;"></i>
+               </button>
+            </div>
+         </div>
+         <!-- navigation-1 right side  -->
+         <div id="nav-right-side">
+            <div id="lang" class="make-element-flex-centered make-border-transparent">
+               <a href="https://www.amazon.in/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fref%3Dnav_logo&ref_=topnav_lang">
+               <span>
+               <img src="images/indian_flag.png" id="flag-icon">
+               <span  class="font-color-white font-size-top"><strong>EN</strong>
+               </span>
+               <span> 
+               <i class='fa fa-caret-down'style="color:grey;"></i>
+               </span>
+               </span>
+               </a>
+               <div class='tooltip'>
+                  <div class="checked">
+                     <label class="text"><span>English</span>
+                     <input type="radio"  name="q" value="English" checked>
+                     <span class="new-radio"></span>
+                     </label>
+                  </div>
+                  <a href="https://www.google.com">
+                     <label  class="text">
+                        <span>हिंदी-HI </span>
+                        <!-- <input type="radio"  name ="q" value="tamil"> -->
+                        <span class="new-radio"></span>
+                     </label>
+                  </a>
+                  <a href="#">
+                     <label class="text" style="font-size:12px">
+                        <span> தமிழ்-TA</span>
+                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <span class="new-radio"></span>
+                     </label>
+                  </a>
+                  <a href=""></a> 
+                  <label  class="text">
+                     <span> తెలుగు-TE </span>
+                     <!-- <input type="radio"  name="q" value="telugu"> -->
+                     <span class="new-radio"></span>
+                  </label>
+                  </a>
+                  <a href="#">
+                     <label class="text">
+                        <span> ಕನ್ನಡ -KN </span>
+                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <span class="new-radio"></span>
+                     </label>
+                  </a>
+                  <a href="#">
+                     <label  class="text">
+                        <span> മലയാളം-ML </span>
+                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <span class="new-radio"></span>
+                     </label>
+                  </a>
+                  <a href="#">
+                     <label  class="text">
+                        <span> বাংলা-BN </span>
+                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <span class="new-radio"></span>
+                     </label>
+                  </a>
+                  <a href="#">
+                     <label  class="text">
+                        <span> मराठी-MR </span>
+                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <span class="new-radio"></span>
+                     </label>
+                  </a>
+                  <div style="padding:5px 0px 15px 15px; border-bottom: 1px solid lightgrey;">   
+                     <a href="#" class="font-size-bottom offer-link-color">Learn more</a>
+                  </div>
+                  <div style="padding:15px 0px" class="font-size-bottom">
+                     <img src="images/indian_flag.png" alt="" style="width:15px; height:15px">
+                     <span> You are shopping on Amazon.in </span>
+                  </div>
+                  <a href="#" class="font-size-bottom offer-link-color"style="padding-left: 15px;">
+                  Country/region</a>
+               </div>
+            </div>
+            <div id="signin" class="make-border-transparent">
+               <a href="#">
+               <span class="font-color-white  font-size-top"> Hello,sign in</span><br>
+               <span class="font-color-white  font-size-bottom"><strong>Account & Lists</strong></span>
+               <span><i class='fa fa-caret-down font-size-top' id="caret-down" style="color:grey;"></i></span>
+               </a>
+            </div>
+            <div id="orders" class="make-border-transparent">
+               <a href="#">
+               <span style="padding-left: 5px;" class="font-color-white font-size-top">Returns</span><br>
+               <span style="padding-left: 5px;" class="font-color-white font-size-bottom"><strong>&
+               Orders</strong></span>
+               </a>
+            </div>
+            <a id="cart" class="make-border-transparent">
+               <div id="cart-wrapper" style="width: 40px;  padding-top: 15px; padding-left: 5px; ">
+                  <img src="images/amazoncart.png" style="width: 40px; height: 30px;">
+                  <span id="cart-count"><strong>0</strong></span>
+               </div>
+               <span style="margin-top: 25px;" class="font-color-white font-size-bottom"> <strong> Cart</strong></span>
+            </a>
+         </div>
+      </nav>
+      <!-- navigation bar -2 -->
+      <nav id="sub-nav">
+         <div id="sub-nav-wrapper" class="font-color-white">
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">
+            <span> <i class="fa fa-bars" style="font-size:large;" class="font-color-white"></i></span>
+            <span> <strong>All</strong></span>
+            </a>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Amazon miniTv</a>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Best Sellers</a>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Mobiles</a>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Customer Service</a>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Today's Deal</a>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">
+            <span>Prime</span>
+            <span><i class='fa fa-caret-down font-size-top' id="caret-down" style="color:grey;"></i></span>
+            </a>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Amazon Pay</a>
+         </div>
+         <div>
+            <img src="images/nav_ad1.jpg" class="nav-img make-border-transparent">
+         </div>
+      </nav>
+      <!-- entire  products ads container  -->
+      <div  id="overall-container">
+         <div id="container">
+            <!--  below is a buttons for moving image slider   -->
+            <a href="#" class="change-Btn right-btn"> 
+            <img class="next-slide" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+            </a>
+            <a href="#" class="change-Btn left-btn ">
+            <img  class="prev-slide" src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+            </a>
+            <!-- this containes images used for image slider  -->
+            <div id="carousel-slides">
+               <img src="images/ad1_.jpg"  class="slides">
+               <img src="images/ad2.jpg"  class="slides">
+               <img src="images/ad3.jpg"  class="slides">
+               <img src="images/ad4.jpg"  class="slides">
+               <img src="images/ad5.jpg"  class="slides">
+               <img src="images/ad6.jpg" class="slides">
+               <img src="images/ad7.jpg"  class="slides">
+               <img src="images/ad8.jpg"  class="slides">
+               <img src="images/ad9.jpg" class="slides">
+            </div>
+            <!--  this holds the all the products -->
+            <div class="ads-container">
+               <!-- the clas ad-row-1 represents the entire row of the products  -->
+               <div class="ad-row-1">
+                  <!--  the class ads-set represents the each set of products (individiual boxes) in a row  -->
+                  <div class="ads-set">
+                     <h2>Up to 60% off | Styles for men </h2>
+                     <!-- the class inner-ad-section represents the each row in the each box or set  -->
+                     <div class="inner-ad-section">
+                        <!-- this wrapper  represents the individual product  -->
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad1.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Clothing</span>
+                           </div>
+                        </a>
+                        <!-- this wrapper  represents the individual product  -->
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad2.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Footwear</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad3.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Watches</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad4.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Bags & luggage</span>
+                           </div>
+                        </a>
+                     </div>
+                     <!-- this class offer link represents the link present in  each  box  -->
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+                  <div class="ads-set">
+                     <h2>Up to 70% off | Clearance store</h2>
+                     <a class="inner-ad-section" href="#">
+                     <img src="images/innerad9.jpg" class="inner-ad-singleimg">
+                     </a>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Home appliances | Up to 50% off</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad5.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Air conditioner</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad6.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Refrigerator</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad7.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Microwave</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad8.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Washing machine</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color">See more </a>
+                     </div>
+                  </div>
+                  <!-- this class containes sign in info and a genral ad showed  -->
+                  <div class="ads-set-2">
+                     <div>
+                        <h2>Sign in for your best experience</h2>
+                        <button class="sign-in-btn"> Sign in securely</button>
+                     </div>
+                     <div class="general-ad">
+                        <a href="#">
+                           <img src="images/innerad10.jpg" alt="" height="250px" width="100%">
+                           <p class="font-size-top service-link-color" style="text-align: end;">
+                              Sponsored &nbsp;<i class="fa fa-info-circle"></i>
+                           </p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="ad-row-1">
+                  <div class="ads-set">
+                     <h2>Revamp your home in style </h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad43.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Bedsheets & more </span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad44.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Home decoration</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad45.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Home storage</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad46.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Lighting solutions</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+                  <div class="ads-set">
+                     <h2>Book in advance for Holi</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad56.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Get upto 100 off on flights</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad53.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>zero payment gateway</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad57.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Rewards on tickets</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad58.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Products for travel</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Upgrade your home | Amazon Brands & more</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad46.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Home appliances</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad47.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>  comforters & more</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad48.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Containers & more </span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad49.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Photoframes &more  </span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See more</a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Automotive essentials | Up to 60% off</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad51.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Cleaning accessories</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad52.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Tyre & rim care</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad54.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Helmet</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad55.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Vaccum cleaner</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color" > See all offers </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- the class ad-row-2 represents the product slider -->
+               <div class="ad-row-2">
+                  <!-- this div containes the  heading of the  section -->
+                  <div>
+                     <span style="font-size:large"><strong> Today's Deals </strong>
+                     </span>
+                     <span style="margin-left: 10px;">
+                     <a href="#" class="offer-link-color font-size-bottom">See all deals </a>
+                     </span>
+                  </div>
+                  <!-- this is a button for sliding a  products -->
+                  <button class="item-change-btn left-but">
+                  <img  class="prev"src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <button class="item-change-btn right-but"> 
+                  <img class="next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <!-- this has a entire content that is all products in a slider -->
+                  <div class="row-content">
+                     <!-- this represents the individual products in a slider -->
+                     <div class="single-ad">
+                        <!-- this represents the image in a  individual product -->
+                        <div class="single-ad-img make-element-flex-centered">
+                           <a href="https:amazon.in"><img src="images/innerad11.jpg" alt=""> </a> 
+                        </div>
+                        <!-- this represents the related offers to the  product -->
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 18% off </span> 
+                           &nbsp; <span style="color: #cc0c39"><strong>Deal of the Day</strong></span>
+                        </div>
+                        <!-- this represents the description or specfication of a individual product -->
+                        <div class="product-specification font-size-bottom ">
+                           iQOO Z6 Lite 5G | Starting 11999/month
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad29.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 76% off </span> 
+                           &nbsp; <span style="color: #cc0c39"><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Jaw Dropping Prices on Zebronics
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <a href="https://amazon.in"> <img src="images/innerad30.jpg" alt=""></a>
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 78% off </span> 
+                           &nbsp; <span style="color: #cc0c39"><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Jaw Dropping Deals on Headsets
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad31.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 71% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Upto 50% off on Storage devices
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad32.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 39% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom">
+                           High Performance Desktop Computer..
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad33.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 35% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Handpicked High Performance Intel.,
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad34.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 14% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           iQOO Neo 5G | Starting 3167/month.
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad35.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 56% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Best Selling Network device
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad36.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 55% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Kitchen Products Amazon Brands and ..
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad37.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 22% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           IPhone 13, Starting Rs,61999
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad38.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 70% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Blaupunkt Bestseller Speakers and So
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad39.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 50% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Top Deals on ibell Power Tools
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad40.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 88% off </span> 
+                           &nbsp; <span style="color: #cc0c39"> <strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Wallpapers and Wall arts
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad41.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 18% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Best offers from V-Guard Products
+                        </div>
+                     </div>
+                     <div class="single-ad">
+                        <div class="single-ad-img">
+                           <img src="images/innerad42.jpg" alt="">
+                        </div>
+                        <div class="offer-text"> 
+                           <span class="highlight-offer">  Up to 18% off </span> 
+                           &nbsp; <span style="color: #cc0c39 "><strong>Deal of the Day</strong></span>
+                        </div>
+                        <div class="product-specification font-size-bottom ">
+                           Top Sellers from Plantex
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- this is also a product slider only displays the product image -->
+               <div class="ad-row-3">
+                  <div>
+                     <span style="font-size:large"> 
+                     <strong> Up to 60% off | Curated furniture picks for your home</strong> 
+                     </span>
+                     <span style="font-size:small; margin-left:10px" >
+                     <a href="#" class="offer-link-color">
+                     Visit the store </a>
+                     </span>
+                  </div>
+                  <!-- this is a button for a slider -->
+                  <button class="item-change-btn left-but">
+                  <img  class="prev"src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <button class="item-change-btn right-but"> 
+                  <img class="next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <div class="ad-show">
+                     <a>
+                     <img src="images/innerad12.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad13.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad14.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad15.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad16.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad17.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad27.jpg" alt="">
+                     </a>
+                     <a>
+                     <img src="images/innerad28.jpg" alt="">
+                     </a>
+                  </div>
+               </div>
+               <div class="ad-row-3">
+                  <div>
+                     <span style="font-size:large"> 
+                     <strong> Up to 60% off | Shop for new kitchenware from local shops</strong> 
+                     </span>
+                     <span style="font-size:small; margin-left:10px" >
+                     <a  href="#" class="offer-link-color">
+                     Visit the store </a>
+                     </span>
+                  </div>
+                  <button class="item-change-btn left-but">
+                  <img  class="prev"src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <button class="item-change-btn right-but"> 
+                  <img class="next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <div class="ad-show">
+                     <a>
+                     <img src="images/innerad18.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad19.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad20.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad21.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad22.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad23.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad24.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad25.jpg" alt="" >
+                     </a>
+                  </div>
+               </div>
+               <div class="ad-row-1">
+                  <div class=" ads-set">
+                     <h2>Sell on Amazon with 1-Click Launch Support</h2>
+                     <a class="inner-ad-section" href="#">
+                     <img src="images/innerad59.jpg" class="inner-ad-singleimg">
+                     </a>
+                     <div class="offer-link">
+                        <a href="#" class="offer-text offer-link-color"> Register now </a>
+                     </div>
+                  </div>
+                  <div class="ads-set">
+                     <h2>Up to 40% off | Daily essentials </h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad60.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Laundry essentials</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad61.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Household cleaners</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad62.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> oral care</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad63.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Air freshners</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Home appliances | Up to 50% off</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad5.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Air conditioner</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad6.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Refrigerator</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad7.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Microwave</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad8.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Washing machine</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See more</a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Electronics devices for home office</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad64.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Smart watches</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad65.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Tablets</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad66.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Laptops</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad67.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Monitors</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="ad-row-3">
+                  <div>
+                     <span style="font-size:large"> 
+                     <strong> Spruce up your living space | from Amazon Launchpad </strong> 
+                     </span>
+                     <span style="font-size:small; margin-left:10px" >
+                     <a href="#" class="offer-link-color">
+                     See more 
+                     </a>
+                     </span>
+                  </div>
+                  <button class="item-change-btn left-but">
+                  <img  class="prev"src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <button class="item-change-btn right-but"> 
+                  <img class="next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <div class="ad-show">
+                     <a>
+                     <img src="images/innerad68.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad69.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad70.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad71.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad72.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad73.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad74.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad75.jpg" alt="" >
+                     </a>
+                  </div>
+               </div>
+               <div class="ad-row-3">
+                  <div>
+                     <span style="font-size:large"> 
+                     <strong> Under ₹599 | Popular home & kitchen picks on a budget from local shops</strong> 
+                     </span>
+                     <span style="font-size:small; margin-left:10px" >
+                     <a href="#" class="offer-link-color" >
+                     Visit the store </a>
+                     </span>
+                  </div>
+                  <button class="item-change-btn left-but">
+                  <img  class="prev"src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <button class="item-change-btn right-but"> 
+                  <img class="next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <div class="ad-show">
+                     <a>
+                     <img src="images/innerad76.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad77.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad78.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad79.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad80.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad81.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad82.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad83.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad83.jpg" alt="" >
+                     </a>
+                  </div>
+               </div>
+               <!-- this class ad-row-4 represents the special ad  displayed in a page about offer products-->
+               <div class="ad-row-4">
+                  <div class="ad-content make-element-flex-centered">
+                     <div style="margin-left: 25px;">
+                        <img src="images/techo_ad.png">
+                     </div>
+                     <div style="margin-left:40px; margin-right:40px">
+                        <img src="images/innerad84.jpg" width="120px" height="160px">
+                     </div>
+                     <div style="font-size: large; line-height:1.4;">
+                        <span>
+                        Tecno Phantom X2 5G Stardust Grey (8GB RAM,256GB Storage) | World's 1st 4nm Dimensity 9000 5G...<br>
+                        </span>
+                        <span>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color: grey;">180</sup>
+                        </span> <br>
+                        <span style="color:rgb(170, 58, 58)">
+                        <sup style="font-size: small;">₹</sup>
+                        <span style="font-size:larger;">39,999<sup style="font-size:small">00</sup></span>
+                        <span style="font-size: small;"> <strong> <span style="color:orange; font-weight: bolder;">&check;</span><span class="offer-link-color">prime</span></strong></span>
+                        </span>
+                     </div>
+                  </div>
+                  <p class="font-size-top service-link-color" style="text-align: end;">
+                     Sponsored &nbsp;<i class="fa fa-info-circle"></i>
+                  </p>
+               </div>
+               <div class="ad-row-1">
+                  <div class=" ads-set">
+                     <h2>Sell on Amazon with 1-Click Launch Support</h2>
+                     <a class="inner-ad-section" href="#">
+                     <img src="images/innerad59.jpg" class="inner-ad-singleimg">
+                     </a>
+                     <div class="offer-link">
+                        <a href="#" class="offer-text offer-link-color"> Register now </a>
+                     </div>
+                  </div>
+                  <div class="ads-set">
+                     <h2>Up to 40% off | Daily essentials </h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad60.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Laundry essentials</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad61.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Household cleaners</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad62.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> oral care</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad63.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Air freshners</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Home appliances | Up to 50% off</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad5.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Air conditioner</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad6.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Refrigerator</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad7.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Microwave</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad8.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Washing machine</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See more</a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Electronics devices for home office</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad64.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Smart watches</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad65.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Tablets</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad66.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Laptops</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad67.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Monitors</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="ad-row-3">
+                  <div>
+                     <span style="font-size:large"> 
+                     <strong> Related to items you've viewed</strong> 
+                     </span>
+                     <span style="font-size:small; margin-left:10px" >
+                     <a href="#" class="offer-link-color">
+                     See more </a>
+                     </span>
+                  </div>
+                  <button class="item-change-btn left-but">
+                  <img  class="prev" src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <button class="item-change-btn right-but"> 
+                  <img class="next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <div class="ad-show">
+                     <a>
+                     <img src="images/innerad85.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad86.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad87.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad88.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad89.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad90.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad91.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad92.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad93.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad94.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad95.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad96.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad95.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad97.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad98.jpg" alt="" >
+                     </a>
+                  </div>
+               </div>
+               <div class="ad-row-1">
+                  <div class="ads-set">
+                     <h2>Pick up where you left </h2>
+                     <div class="single-inner-ad-section">
+                        <a  href="#">
+                        <img src="images/innerad99.jpg" id="ad-img" class="single-img-variants-ad">
+                        </a>
+                        <br>
+                        <span id="ad-text">Mi Robot Vacuum-Mop P, Best-in-class Laser Navigation in 10-20K INR price ba…</span> 
+                        <br>
+                        <span> <sup>₹</sup> <span  id = "offer-price" style="font-size: large;">21,999</span> </span>
+                        <span style=" color:grey;margin-left:10px"><span>M.R.P:</span>
+                        <span style="text-decoration: line-through;">
+                        <span>₹<span id="actual-price">29,999</span> </span></span>
+                        </span>
+                        <div style="margin-top:10px">
+                           <span> 
+                           <img src="images/innerad99.jpg" id="ad99" class="img-variants-ad">
+                           </span>
+                           <span> 
+                           <img src="images/innerad100.jpg" id="ad100" class="img-variants-ad">
+                           </span>
+                           <span> 
+                           <img src="images/innerad101.jpg" id="ad101" class="img-variants-ad">
+                           </span>
+                           <span> 
+                           <img src="images/innerad102.jpg" id="ad102" class="img-variants-ad">
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ads-set">
+                     <h2>Up to 40% off | Daily essentials </h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad60.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Laundry essentials</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad61.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Household cleaners</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad62.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> oral care</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad63.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Air freshners</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+                  <div class="ads-set">
+                     <h2>Home appliances | Up to 50% off</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad5.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Air conditioner</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad6.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Refrigerator</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad7.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Microwave</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad8.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Washing machine</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See more</a>
+                     </div>
+                  </div>
+                  <div class=" ads-set">
+                     <h2>Electronics devices for home office</h2>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad64.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span>Smart watches</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad65.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Tablets</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="inner-ad-section">
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad66.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Laptops</span>
+                           </div>
+                        </a>
+                        <a class="wrapper" href="#">
+                           <img src="images/innerad67.jpg" class="inneradimg">
+                           <div class="wrapper-text">
+                              <span> Monitors</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="offer-link">
+                        <a href="#" class="offer-link-color"> See all offers </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="ad-row-3">
+                  <div>
+                     <span style="font-size:large"> 
+                     <strong> Under ₹599 | Popular home & kitchen picks on a budget from local shops</strong> 
+                     </span>
+                     <span style="font-size:small; margin-left:10px" >
+                     <a href="#" class="offer-link-color">
+                     Visit the store </a>
+                     </span>
+                  </div>
+                  <button class="item-change-btn left-but">
+                  <img  class="prev"src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <button class="item-change-btn right-but"> 
+                  <img class="next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                  </button>
+                  <div class="ad-show">
+                     <a>
+                     <img src="images/innerad76.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad77.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad78.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad79.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad80.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad81.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad82.jpg" alt="" >
+                     </a>
+                     <a>
+                     <img src="images/innerad83.jpg" alt="" >
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- This class represents the which is showed by customer's  history  which is displayed at end of page-->
+      <div class="end-ads">
+         <div class="end-ad-content">
+            <div class="end-ads-heading">
+               <h3>Customers who viewed items in your browsing history also viewed</h3>
+            </div>
+            <button class="end-ad-change-left-btn">
+            <img  class="end-ad-prev"src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+            <button class="end-ad-change-right-btn"> 
+            <img class="end-ad-next" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+            <div class="end-ads-detail">
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom offer-link-color">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup class="offer-link-color" style="font-size: small;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom offer-link-color">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup class="offer-link-color font-size-top">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom offer-link-color">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;">
+                     <img src="images/innerad109.jpg"> 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202);">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <div>
+                        <sup class="font-size-bottom" style="margin-top:10px;">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </div>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+               <div class="end-ad-single-detail">
+                  <div style="margin-left:15px;" >
+                     <img src="images/innerad109.jpg" > 
+                     <br>
+                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
+                     </span> 
+                     <br>
+                     <span>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star unchecked"></i> <sup style="font-size: small; color:rgb(24, 146, 202); ;">8,210</sup>
+                     </span> 
+                     <div class="offer-text"> 
+                        <span class="highlight-offer">78% off</span> 
+                        &nbsp; <span style="color: #cc0c39 "><strong>Deal</strong></span>
+                     </div>
+                     <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
+                     </span>
+                     <br>
+                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span style="text-decoration: line-through;">
+                     <span>₹<span>29,999</span></span></span>
+                     </span> 
+                     <br>
+                     <span class="font-size-top">
+                     Get it by <b> Thursday, March 9 </b> FREE Delivery over ₹499. Fulfilled by Amazon.
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="sign-up-recommands make-element-flex-centered">
+            <div>
+               <span class="font-size-bottom">See personalized recommendations</span> <br>
+               <button class="end-ad-sign-in-btn make-border-transparent">sign in</button> <br>
+               <span style="margin-left:35px" class="font-size-top" >New customer? <a style="color:rgb(24, 146, 202);">Start here</a></span>
+            </div>
+         </div>
+      </div>
+      <!-- this is for go to top of the page -->
+      <a href="#" class="back-to-top font-color-white">
+      Back to top
+      </a>
+      <!-- this is  a footer of the page  -->
+      <div class="footer font-color-white">
+         <div class="footer-wrap make-element-flex-centered">
+            <div class="single-foot">
+               <h3>Get to Know us</h3>
+               <ul class="link-color font-size-bottom">
+                  <li>About Us</li>
+                  <li>Careers</li>
+                  <li>Press Releases</li>
+                  <li>Amazon Science</li>
+               </ul>
+            </div>
+            <div class="single-foot">
+               <h3>Connect with Us</h3>
+               <ul class="link-color font-size-bottom">
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+               </ul>
+            </div>
+            <div class="single-foot">
+               <h3>	
+                  Make Money with Us
+               </h3>
+               <ul class="link-color font-size-bottom">
+                  <li>Sell on Amazon</li>
+                  <li>Sell under Amazon Accelerator</li>
+                  <li>Protect and Build Your Brand</li>
+                  <li>Amazon Global Selling</li>
+                  <li>Become an Affiliate</li>
+                  <li>Fulfilment by Amazon</li>
+                  <li>Advertise Your Products</li>
+                  <li>Amazon Pay on Merchants</li>
+               </ul>
+            </div>
+            <div class="single-foot font-size-bottom">
+               <h3>Let Us Help You</h3>
+               <ul class="link-color font-size-bottom">
+                  <li>COVID-19 and Amazon</li>
+                  <li>Your Account</li>
+                  <li>Returns Centre</li>
+                  <li>100% Purchase Protection</li>
+                  <li>Amazon App Download</li>
+                  <li>Amazon Assistant Download</li>
+                  <li>Help</li>
+               </ul>
+            </div>
+         </div>
+         <!-- this representes the different country that the  page hoste and with its language selection -->
+         <div class="serving-country">
+            <div class="footer-logo">
+               <span class="footer-logo-wrap">
+               <img src="images/amazon_footer_logo.png" style=" width:75px;height:25px; ">
+               </span>
+               <span class="footer-logo-wrap" style="margin-left:100px;">
+               <a href="#" class="language-wrap link-color">
+               <span class="material-symbols-outlined" style="font-size: medium;">language</span>
+               <span class="font-size-bottom">English</span> 
+               <i class="fa service-link-color" style="font-size:12px;margin-left: 20px;">&#xf0dc;</i>
+               </a>
+               </span> 
+            </div>
+            <div>
+               <ul class="serving-countries-names  font-size-bottom make-element-flex-centered">
+                  <a href="#" class='link-color'>
+                     <li>Australia</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Brazil</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Canada</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>China</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>France</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Germany</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Italy</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Japan</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Mexico</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Netherland</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Poland</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Singapore</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Spain</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>Turkey</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>United Arab Emirates</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>United Kingdom</li>
+                  </a>
+                  <a href="#" class='link-color'>
+                     <li>United States</li>
+                  </a>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- this is  to show the other services that the web page owner does like amazon has aws hosting service -->
+      <div class= "footer-other-services">
+         <div class="footer-other-services-wrap">
+            <div class="footer-other-services-wrap-row">
+               <a href="#">
+                  <ul class="single-service">
+                     <li class="link-color font-size-bottom">AbeBooks</li>
+                     <li class ="service-link-color font-size-bottom">Books Arts &</li>
+                     <li class = "service-link-color font-size-bottom">collectibles</li>
+                  </ul>
+               </a>
+               <a href="#">
+                  <ul class="single-service">
+                     <li class="link-color font-size-bottom">Amazon web Services</li>
+                     <li class ="service-link-color font-size-bottom">Scalable Cloud </li>
+                     <li class = "service-link-color font-size-bottom">Computing Services</li>
+                  </ul>
+               </a>
+               <a href="#">
+                  <ul class="single-service">
+                     <li class="link-color font-size-bottom">Audible</li>
+                     <li class ="service-link-color font-size-bottom">Download</li>
+                     <li class = "service-link-color font-size-bottom">Audio Books</li>
+                  </ul>
+               </a>
+               <a href="#">
+                  <ul class="single-service ">
+                     <li class="link-color font-size-bottom">DPReview</li>
+                     <li class ="service-link-color font-size-bottom">Digital</li>
+                     <li class = "service-link-color font-size-bottom">Photography</li>
+                  </ul>
+               </a>
+               <a href="#">
+                  <ul class="single-service ">
+                     <li class="link-color font-size-bottom">IMDb</li>
+                     <li class ="service-link-color font-size-bottom">Movies,TV</li>
+                     <li class = "service-link-color font-size-bottom">& Celebrities</li>
+                  </ul>
+               </a>
+            </div>
+            <div class="footer-other-services-wrap-row" style="width: 79%;">
+               <a href="#">
+                  <ul class="single-service">
+                     <li class="link-color font-size-bottom">Shopbop</li>
+                     <li class ="service-link-color font-size-bottom">Designer</li>
+                     <li class = "service-link-color font-size-bottom">Fashion Brands</li>
+                  </ul>
+               </a>
+               <a href="#">
+                  <ul class="single-service">
+                     <li class="link-color font-size-bottom">Amazon Business</li>
+                     <li class ="service-link-color font-size-bottom">Everything for</li>
+                     <li class = "service-link-color font-size-bottom">your Business</li>
+                  </ul>
+               </a>
+               <a href="#">
+                  <ul class="single-service">
+                     <li class="link-color font-size-bottom">Prime Now</li>
+                     <li class ="service-link-color font-size-bottom">2-hour Deleivery</li>
+                     <li class = "service-link-color font-size-bottom">on Everyday Items</li>
+                  </ul>
+               </a>
+               <a href="#" >
+                  <ul class="single-service">
+                     <li class="link-color font-size-bottom">Amazon Prime Music</li>
+                     <li class ="service-link-color font-size-bottom">90 million songs, ad-free</li>
+                     <li class = "service-link-color font-size-bottom">Over 15 million podcast episodes</li>
+                  </ul>
+               </a>
+            </div>
+         </div>
+         <div class="footer-copyright link-color font-size-top">
+            <div class="copyrights-link">
+               <a href="#" class="link-color">Conditions of use & sales</a>
+               <a href="#" class="link-color">Privacy Notice</a>
+               <a href="#" class="link-color">Interest Based Ads</a>
+            </div>
+            <div>
+               <span class="link-color"> &#169; 1996-2023, Amazon.com, Inc. or its affiliates</span>
+            </div>
+         </div>
+      </div>
+      <!-- <div>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>  -->
+      <script src="app.js"></script>
+   </body>
+</html>
