@@ -51,6 +51,7 @@ function displayslide(req_num){
     slide_container[slideindex-1].style.display = "block";
 }
 
+
 //this function is trggered when the buttton clicked 
 function changeslide(n){
     displayslide(slideindex += n);
@@ -85,7 +86,6 @@ for(let previous of prevbtn){
     previous.addEventListener("click",()=>{
         let product_container_dimension = previous.nextElementSibling.nextElementSibling. getBoundingClientRect();
         let product_container_width = product_container_dimension.width;
-        console.log(product_container_width)
         previous.nextElementSibling.nextElementSibling.scrollLeft -= product_container_width + 30;
     })
 }
@@ -110,6 +110,44 @@ finalAdPrevbtn.addEventListener("click",()=>{
     let product_container_width =  product_container_dimension.width;
     finalAdContainer.scrollLeft -= product_container_width ;
 })
+
+
+//to make the side bar
+window.addEventListener("scroll",()=>{
+    document.querySelector(".sidebar").classList.remove("hide");
+    // document.querySelector(".sign-in-tooltip").style.display ="none";
+    // document.querySelector(".prime-tooltip").style.display = "none";
+    // document.querySelector(".tooltip").style.display = "none";
+})
+let menus  = document.getElementsByClassName('menu-btn');
+for(let menu of menus){
+    menu.addEventListener('click',()=>{
+        document.querySelector(".sidebar").classList.toggle("hide");
+    })
+}
+  
+let see_all =  document.querySelectorAll('.compress-expand');
+
+for(let i of see_all){
+    i.addEventListener("click",()=>{
+        document.querySelector(".expanded").classList.toggle("hide2")
+        document.querySelector(".compress-expand").classList.toggle("hide3")
+})
+}
+
+
+let sidebar_compressed = document.querySelectorAll(".sidebar-list-compress");
+let sidebar_expanded = document.querySelectorAll(".sidebar-expanded");
+
+for(let i of sidebar_compressed){
+    i.addEventListener("click",()=>{
+        for(let j of sidebar_expanded){
+            if(i.getAttribute("data-menu-number") == j.getAttribute("data-menu-number") || j.classList.contains('hide')){
+                j.classList.toggle("hide");
+            } 
+        }
+    })    
+}
 
 
 //variable images for ad
@@ -152,4 +190,55 @@ variant_4.addEventListener('click',()=>{
     variant_text .textContent = "Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)"
     variant_image.src = 'file:///home/ganeshamoorthy/vscode/amazon/images/innerad102.jpg'
 })
+
+
+//js does not support method overloading
+// encapsulation is done by using get and set keywords or by our methods in class
+//polymorphism is done by using the method overriding with help of inheritance 
+//in js abstraction is done by abstract class we have to change the constructor to  make the class abstract
+// class animal{
+    
+//     #name;
+//     constructor(name){
+//         if(new.target == animal){
+//             throw new Error("Abstract class cannot be instaniated")
+//         }
+//         this.#name = name;
+//         // Object.preventExtensions(this);  // this makes not to add property
+//     }
+
+//     get getname() {
+//         return this.#name;
+//     }
+   
+//     set setname(name){
+//         this.#name = name;
+//     }
+
+//     animalsound(name){
+//         console.log(name)
+//         console.log("aniaml sound")
+//     }
+// }
+
+// class cat extends  animal{
+//     constructor(name,year){
+//         super(name);
+//         this.year = year;
+//     }
+
+//     animalsound(name){
+//         console.log(name)
+//         console.log("this is a cat sound");
+//     }
+
+// }
+
+// let ruby = new cat("ruby",2020);
+// ruby.animalsound();
+
+
+
+
+
 
