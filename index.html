@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,49 +69,49 @@
                   <a href="https://www.google.com">
                      <label  class="text">
                         <span>हिंदी-HI </span>
-                        <!-- <input type="radio"  name ="q" value="tamil"> -->
+                        <input type="radio"  name ="q" value="tamil">
                         <span class="new-radio"></span>
                      </label>
                   </a>
                   <a href="#">
                      <label class="text" style="font-size:12px">
                         <span> தமிழ்-TA</span>
-                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <input type="radio"  name="q" value="telugu">
                         <span class="new-radio"></span>
                      </label>
                   </a>
-                  <a href=""></a> 
+                  <a href="#"></a> 
                   <label  class="text">
                      <span> తెలుగు-TE </span>
-                     <!-- <input type="radio"  name="q" value="telugu"> -->
+                     <input type="radio"  name="q" value="telugu">
                      <span class="new-radio"></span>
                   </label>
                   </a>
                   <a href="#">
                      <label class="text">
                         <span> ಕನ್ನಡ -KN </span>
-                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <input type="radio"  name="q" value="telugu">
                         <span class="new-radio"></span>
                      </label>
                   </a>
                   <a href="#">
                      <label  class="text">
                         <span> മലയാളം-ML </span>
-                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <input type="radio"  name="q" value="telugu">
                         <span class="new-radio"></span>
                      </label>
                   </a>
                   <a href="#">
                      <label  class="text">
                         <span> বাংলা-BN </span>
-                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <input type="radio"  name="q" value="telugu">
                         <span class="new-radio"></span>
                      </label>
                   </a>
                   <a href="#">
                      <label  class="text">
                         <span> मराठी-MR </span>
-                        <!-- <input type="radio"  name="q" value="telugu"> -->
+                        <input type="radio"  name="q" value="telugu">
                         <span class="new-radio"></span>
                      </label>
                   </a>
@@ -126,12 +126,52 @@
                   Country/region</a>
                </div>
             </div>
+
+
             <div id="signin" class="make-border-transparent">
                <a href="#">
                <span class="font-color-white  font-size-top"> Hello,sign in</span><br>
                <span class="font-color-white  font-size-bottom"><strong>Account & Lists</strong></span>
                <span><i class='fa fa-caret-down font-size-top' id="caret-down" style="color:grey;"></i></span>
                </a>
+
+
+            <div class='sign-in-tooltip'>
+                  <div class="sign-in-btn-wrapper">
+                     <button class="sign-in-tooltip-btn">Sign In</button> <br>
+                     <span class="font-size-top" style="margin-top: 10px;">New customer?  <a class="offer-link-color">Start here</a></span>
+                  </div>
+
+
+                <div class="sign-in-tooltip-menus"> 
+                    <div class="sign-in-single-side-menu">
+                        <h3 style="margin-bottom: 5px;">Your Lists</h3>
+                        <ul class="font-size-bottom sign-in-single-menu-list">
+                           <li>About Us</li>
+                           <li>Careers</li>
+                           <li>Press Releases</li>
+                           <li>Amazon Science</li>
+                        </ul>
+                     </div>
+
+                     <div class="sign-in-single-side-menu" style="border-left: 1px solid rgba(187, 187, 187, 0.4);">
+                        <h3 style="margin-bottom: 5px;">Your Account</h3>
+                        <ul class="font-size-bottom sign-in-single-menu-list" >
+                           <li>Your Account</li>
+                           <li>Your Orders</li>
+                           <li>Your Wish List</li>
+                           <li>Your Recommendations</li>
+                           <li>Your Prime Membership</li>
+                           <li>Your Prime Video</li>
+                           <li>Your subscribe & save Items</li>
+                           <li>Memembership & Subscriptions</li>
+                           <li>Your Free Amazon Business Account</li>
+                           <li>Your Seller Account</li>
+                           <li>Manage Your Content and Devices</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
             </div>
             <div id="orders" class="make-border-transparent">
                <a href="#">
@@ -140,6 +180,7 @@
                Orders</strong></span>
                </a>
             </div>
+
             <a id="cart" class="make-border-transparent">
                <div id="cart-wrapper" style="width: 40px;  padding-top: 15px; padding-left: 5px; ">
                   <img src="images/amazoncart.png" style="width: 40px; height: 30px;">
@@ -152,8 +193,8 @@
       <!-- navigation bar -2 -->
       <nav id="sub-nav">
          <div id="sub-nav-wrapper" class="font-color-white">
-            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">
-            <span> <i class="fa fa-bars" style="font-size:large;" class="font-color-white"></i></span>
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent menu-btn">
+            <span><i class="fa fa-bars" style="font-size:large;" class="font-color-white"></i></span>
             <span> <strong>All</strong></span>
             </a>
             <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Amazon miniTv</a>
@@ -161,11 +202,360 @@
             <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Mobiles</a>
             <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Customer Service</a>
             <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Today's Deal</a>
-            <a href="#" class="font-color-white sub-nav-menu make-border-transparent">
+            <a href="#" class="font-color-white sub-nav-menu make-border-transparent" id="prime">
             <span>Prime</span>
             <span><i class='fa fa-caret-down font-size-top' id="caret-down" style="color:grey;"></i></span>
             </a>
             <a href="#" class="font-color-white sub-nav-menu make-border-transparent">Amazon Pay</a>
+            
+            <div class="sidebar">
+               <h3 class="sidebar-head"> <i class="fa fa-user-circle-o sidebar-head-account-symbol">
+               </i>Hello Sign in<img class="close-icon menu-btn" src="images/close_FILL0_wght400_GRAD0_opsz48.svg"></h3>
+               <div class="sidebar-contents">
+                   <ul>
+                       <li class="sidebar-list-head"> Trending</li>
+                       <li class="sidebar-list">Best Sellers</li>
+                       <li class="sidebar-list">New Releases</li>
+                       <li class="sidebar-list">Movers and Shakers</li>
+                       <li class="sidebar-list-line"></li>
+           
+                       <li class="sidebar-list-head">Digital Content And Devices</li>
+                       <li class="sidebar-list">Amazon miniTV-Free entertainment </li>
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="1"> <span class="sidebar-list-content-width"> Echo & Alexa </span>
+                       <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+              
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="2" > <span class="sidebar-list-content-width"> Fire Tv</span>
+                       <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       
+                       </li>
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="3" ><span class="sidebar-list-content-width">Kindle E-Readers & books</span> 
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                      
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="4" > <span class="sidebar-list-content-width"> Audible AudioBooks </span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                     
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="5" ><span class="sidebar-list-content-width">Amazon Prime Video</span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                     
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="6" ><span class="sidebar-list-content-width"> Amazon Prime Music </span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                       <li class="sidebar-list-line"></li>
+           
+                       <li class="sidebar-list-head">Shop By Category </li>
+                       
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="7" ><span class="sidebar-list-content-width">Mobiles,computers </span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="8" ><span class="sidebar-list-content-width">Tv, Appliances, Electronics </span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="9" ><span class="sidebar-list-content-width">Men's Fashion</span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+           
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="10" > <span class="sidebar-list-content-width"> Women's Fashion</span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                       
+                       <li class="sidebar-list compress-expand">  See all 
+                           <img class="expand-icon" src="images/expand_more_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                       <ul class="expanded">
+                        <li class="sidebar-list-line"></li>
+                        <li class="sidebar-list"><a> Home, Kitchen, Pets</a></li> 
+                        <li class="sidebar-list"><a> Beauty, Healthy, Grocesary</a></li> 
+                        <li class="sidebar-list"><a> Sports, Fitness, Bags, Luggage</a></li> 
+                        <li class="sidebar-list"><a> Toys, Baby Products, Kid's Fashion</a></li> 
+                        <li class="sidebar-list"><a> Car, Motorbike, Industrial</a></li> 
+                        <li class="sidebar-list"><a> Books</a></li> 
+                        <li class="sidebar-list"><a> Movies, Music , video Games </a></li>
+                        <li class="sidebar-list compress-expand">See less 
+                            <img class="expand-icon" src="images/expand_less_FILL0_wght400_GRAD0_opsz48.svg">
+                        </li>
+                     </ul>
+                       <li class="sidebar-list-line"></li>
+      
+                       <li class="sidebar-list-head">Program & Features</li>
+                       
+                       <li class="sidebar-list sidebar-list-compress" data-menu-number="11"><span class="sidebar-list-content-width"> Gift Cards & Mobile Recharges </span>
+                           <img class="sidebar-arrow-forward-icon" src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                       </li>
+                       <li class="sidebar-list">Flight Tickets</li>
+                       <li class="sidebar-list">Clearance Store</li>
+                       <li class="sidebar-list-line"></li>
+                       <li class="sidebar-list-head">Help & Support</li>
+                       <li class="sidebar-list">Your Account</li>
+                       <li class="sidebar-list">Customer Service</li>
+                       <li class="sidebar-list" style="padding-bottom: 20px;">Sign in</li>
+                   </ul>
+         
+                  
+
+                   <ul class="sidebar-expanded" data-menu-number="1">
+      
+                       <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+                       <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+                       <span><b> Main Menu </b></span>
+                       </li>  
+   
+                       <li class="sidebar-list-line"></li>
+                       <li class="sidebar-list-head">Echo & Alexa</li>
+                       <li class="sidebar-list">All new Echo (4th Gen)</li>
+                       <li class="sidebar-list">Echo Dot (3rd Gen)</li>
+                       <li class="sidebar-list">Echo Show 8</li>
+                       <li class="sidebar-list">All new Echo (4th Gen)</li>
+                       <li class="sidebar-list">Echo Show 5</li>
+                       <li class="sidebar-list">Echo Studio</li>
+                       <li class="sidebar-list">All new Echo Show 10</li>
+                       <li class="sidebar-list">See all devices with Alexa</li>
+                       <li class="sidebar-list-line"></li>
+                       <li class="sidebar-list-head">Content & Resources</li>
+                       <li class="sidebar-list">Meet Alexa</li>
+                       <li class="sidebar-list">Alexa Skills</li>
+                       <li class="sidebar-list">Alexa App</li>
+                       <li class="sidebar-list">Alexa Smart Home</li>
+                       <li class="sidebar-list" style="margin-bottom: 20px;">Amazon Prime Music</li>
+           
+                   </ul>
+                   <ul class="sidebar-expanded" data-menu-number="2" >
+         
+                     <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+                     <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+                     <span><b> Main Menu</b></span>
+                     </li>  
+ 
+                     <li class="sidebar-list-line"></li>
+                     <li class="sidebar-list-head">Fire Tv</li>
+                     <li class="sidebar-list">Introducing:Fire TV Stick lite</li>
+                     <li class="sidebar-list">All-new Fire Tv Stick(3rd Gen)</li>
+                     <li class="sidebar-list">Fire TV Stick 4k </li>
+                     <li class="sidebar-list">Fire TV Cube</li>
+                     <li class="sidebar-list">Amazon Prime Video</li>
+                     <li class="sidebar-list">Firen TV Apps & Games</li>
+                     <li class="sidebar-list">See all Fire Tv devices</li>
+                 </ul>
+                 <ul class="sidebar-expanded" data-menu-number="3" >
+         
+                  <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+                  <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+                  <span><b> Main Menu </b></span>
+                  </li>  
+                  <li class="sidebar-list-line"></li>
+                  <li class="sidebar-list-head">Kindle E-Readers</li>
+                  <li class="sidebar-list">All-new-Kindle</li>
+                  <li class="sidebar-list">All-new-Kindle Paperwhite</li>
+                  <li class="sidebar-list">All-New Kindle Oasis</li>
+                  <li class="sidebar-list">Refurbished & open Box</li>
+                  <li class="sidebar-list">See all Kindle E-readers</li>
+                  <li class="sidebar-list-line"></li>
+                  <li class="sidebar-list-head">Kindle Ebooks</li>
+                  <li class="sidebar-list">Prime Reading</li>
+                  <li class="sidebar-list">Kindle Unlimited</li>
+                  <li class="sidebar-list">deals on Kindle eBooks</li>
+                  <li class="sidebar-list">eBook Bestsellers</li>
+                  <li class="sidebar-list">eBooks in Indian Language</li>
+                  <li class="sidebar-list">Hindi</li>
+                  <li class="sidebar-list" style="margin-bottom: 20px;">Tamil</li>
+              </ul>
+              <ul class="sidebar-expanded" data-menu-number="4" >
+         
+               <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+               <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+               <span><b> Main Menu</b></span>
+               </li>  
+               <li class="sidebar-list-line"></li>
+               <li class="sidebar-list-head">Audible Audiobooks</li>
+               <li class="sidebar-list">Audible Membership</li>
+               <li class="sidebar-list">All Audiobooks</li>
+               <li class="sidebar-list">Best Sellers</li>
+               <li class="sidebar-list">New Releases</li>
+               <li class="sidebar-list">Hindi Audiobooks</li>
+           </ul>
+           <ul class="sidebar-expanded" data-menu-number="5" >
+         
+            <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+            <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+            <span><b> Main Menu</b></span>
+            </li>  
+            <li class="sidebar-list-line"></li>
+            <li class="sidebar-list-head">Amazon Prime Video</li>
+            <li class="sidebar-list">All Videos</li>
+            <li class="sidebar-list">Movies</li>
+            <li class="sidebar-list">Tv Shows</li>
+            <li class="sidebar-list">Kids Shows</li>
+        </ul>
+        <ul class="sidebar-expanded" data-menu-number="6" >
+         
+         <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+         <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+         <span><b> Main Menu</b></span>
+         </li> 
+         <li class="sidebar-list-line"></li>
+         <li class="sidebar-list-head">Amazon Prime Music</li>
+         <li class="sidebar-list">Amazon Prime Music</li>
+         <li class="sidebar-list">open Web Player</li>
+         <li class="sidebar-list">Voice Controlled with Alexa</li>
+         <li class="sidebar-list">Amazon Prime Music Apps</li>
+         <li class="sidebar-list">CDs and Vinyls</li>
+     </ul>
+     <ul class="sidebar-expanded" data-menu-number="7" >
+         
+      <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+      <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+      <span><b> Main Menu </b></span>
+      </li>  
+      <li class="sidebar-list-line"></li>
+      <li class="sidebar-list-head">Mobiles,Tablets & more</li>
+      <li class="sidebar-list">All Mobile Phones</li>
+      <li class="sidebar-list">All Mobile Accessories</li>
+      <li class="sidebar-list">Cases & Covers</li>
+      <li class="sidebar-list">Screen Protectors</li>
+      <li class="sidebar-list">Power Banks</li>
+      <li class="sidebar-list">Refurbished & open Box</li>
+      <li class="sidebar-list">Tablets</li>
+      <li class="sidebar-list">Wearable Devices</li>
+      <li class="sidebar-list">Smart Home</li>
+      <li class="sidebar-list">Office Supplies & Stationary</li>
+      <li class="sidebar-list">Software</li>
+      <li class="sidebar-list-line"></li>
+      <li class="sidebar-list-head">Computer & Accessories</li>
+      <li class="sidebar-list">All computers & Accessories</li>
+      <li class="sidebar-list">Laptops</li>
+      <li class="sidebar-list">Drives & storage</li>
+      <li class="sidebar-list">Printers & Ink</li>
+      <li class="sidebar-list">Networking Devices</li>
+      <li class="sidebar-list">Computer Accessories</li>
+      <li class="sidebar-list">Game zone</li>
+      <li class="sidebar-list">Monitors</li>
+      <li class="sidebar-list">Desktops</li>
+      <li class="sidebar-list">Components</li>
+      <li class="sidebar-list" style="margin-bottom: 20px;">All Electronics</li>
+  </ul>
+  <ul class="sidebar-expanded" data-menu-number="8" >
+         
+   <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+   <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+   <span><b> Main Menu</b></span>
+   </li>  
+
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Tv,Audio & Cameras</li>
+   <li class="sidebar-list">televisions</li>
+   <li class="sidebar-list">Home Entertainment Systems</li>
+   <li class="sidebar-list">Headphones</li>
+   <li class="sidebar-list">Cameras</li>
+   <li class="sidebar-list">DSLR Cameras</li>
+   <li class="sidebar-list">Security Cameras</li>
+   <li class="sidebar-list">Camera  Accessories</li>
+   <li class="sidebar-list">Musical Instruments & professional Audio</li>
+   <li class="sidebar-list">Gaming Consoles</li>
+   <li class="sidebar-list">All Electronics</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Appliances</li>
+   <li class="sidebar-list">Air Conditioners</li>
+   <li class="sidebar-list">Refrigerators</li>
+   <li class="sidebar-list">Washing Machines</li>
+   <li class="sidebar-list">Kitchen & Home Appiances</li>
+   <li class="sidebar-list">Heating & cooling Appliances</li>
+   <li class="sidebar-list" style="margin-bottom: 20px;">All Appliances</li>
+</ul>
+<ul class="sidebar-expanded" data-menu-number="9" >
+         
+   <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+   <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+   <span><b> Main Menu</b></span>
+   </li>  
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">men's Clothing</li>
+   <li class="sidebar-list">Clothing</li>
+   <li class="sidebar-list">T-shirts & polos </li>
+   <li class="sidebar-list">jeans</li>
+   <li class="sidebar-list">Innerwear</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Accessories</li>
+   <li class="sidebar-list">watches</li>
+   <li class="sidebar-list">Bags & lugguage</li>
+   <li class="sidebar-list">Sunglasses</li>
+   <li class="sidebar-list">Jewellery</li>
+   <li class="sidebar-list">Wallets</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Men's Shoes</li>
+   <li class="sidebar-list">Shoes</li>
+   <li class="sidebar-list">Sports Shoes</li>
+   <li class="sidebar-list">Formal Shoes</li>
+   <li class="sidebar-list">Casual Shoes</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Stores</li>
+   <li class="sidebar-list">Sportswear</li>
+   <li class="sidebar-list">The Designer Boutique</li>
+   <li class="sidebar-list">Men's Handlooms</li>
+   <li class="sidebar-list" style="margin-bottom: 20px;">Fashion Sales & Deals</li>
+</ul>
+
+
+<ul class="sidebar-expanded" data-menu-number="10" >
+         
+   <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+   <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+   <span><b> Main Menu</b></span>
+   </li>  
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">women's Clothing</li>
+   <li class="sidebar-list">Clothing</li>
+   <li class="sidebar-list">western Wear</li>
+   <li class="sidebar-list">Ethinc Wear/li>
+   <li class="sidebar-list">Lingerie & NightWear</li>
+   <li class="sidebar-list">Top Brands</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Accessories</li>
+   <li class="sidebar-list">Watches</li>
+   <li class="sidebar-list">Handbags & Clutches</li>
+   <li class="sidebar-list"> Gold & Diamend Jewellery</li>
+   <li class="sidebar-list">Fashion & Silver Jewellery</li>
+   <li class="sidebar-list">Sunglasses</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Women's Shoes</li>
+   <li class="sidebar-list">Shoes</li>
+   <li class="sidebar-list">Fashion Sandals</li>
+   <li class="sidebar-list">Ballerinas</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Stores</li>
+   <li class="sidebar-list">The Designer Boutique</li>
+   <li class="sidebar-list">Handloom & Handicraft Store</li>
+   <li class="sidebar-list">Sportswear</li>
+   <li class="sidebar-list">Women's Fashion </li>
+   <li class="sidebar-list">Amazon Fashion</li>
+   <li class="sidebar-list" style="margin-bottom: 20px;">Fashion Sales & Deals</li>
+</ul>
+<ul class="sidebar-expanded" data-menu-number="11" >
+   <li class="sidebar-list sidebar-list-compress" style="margin-top: 5px; gap: 2%;">
+   <img class="sidebar-arrow-back-to-menu" src="images/arrow_back_FILL0_wght400_GRAD0_opsz48.svg">
+   <span><b> Main Menu</b></span>
+   </li>  
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Gift Cards</li>
+   <li class="sidebar-list">All Gift Cards</li>
+   <li class="sidebar-list">Popular Gift Cards</li>
+   <li class="sidebar-list">Gift Boxes, Gift Tags, Greeting Cards</li>
+   <li class="sidebar-list">Popular Brand Gift Cards</li>
+   <li class="sidebar-list">Birthday Gift Cards</li>
+   <li class="sidebar-list">Wedding & Anniversary</li>
+   <li class="sidebar-list">Best Wishes & Thank You</li>
+   <li class="sidebar-list">Corporte Gift Cards</li>
+   <li class="sidebar-list-line"></li>
+   <li class="sidebar-list-head">Recharges</li>
+   <li class="sidebar-list" style="margin-bottom: 20px;">Mobile Recharges</li>
+</ul>
+               </div>
+            </div>
+          
+            <div class='prime-tooltip'>
+                  <img src="images/innerad110.jpg" style="width:100%;height: 100%;">
+         </div>
          </div>
          <div>
             <img src="images/nav_ad1.jpg" class="nav-img make-border-transparent">
@@ -221,7 +611,7 @@
                         <a class="wrapper" href="#">
                            <img src="images/innerad3.jpg" class="inneradimg">
                            <div class="wrapper-text">
-                              <span> Watches</span>
+                              <span>Watches</span>
                            </div>
                         </a>
                         <a class="wrapper" href="#">
@@ -336,13 +726,13 @@
                         <a class="wrapper" href="#">
                            <img src="images/innerad56.jpg" class="inneradimg">
                            <div class="wrapper-text">
-                              <span> Get upto 100 off on flights</span>
+                              <span> Get upto 100 off</span>
                            </div>
                         </a>
                         <a class="wrapper" href="#">
                            <img src="images/innerad53.jpg" class="inneradimg">
                            <div class="wrapper-text">
-                              <span>zero payment gateway</span>
+                              <span>zero payment</span>
                            </div>
                         </a>
                      </div>
@@ -468,8 +858,8 @@
                            iQOO Z6 Lite 5G | Starting 11999/month
                         </div>
                      </div>
-                     <div class="single-ad">
-                        <div class="single-ad-img">
+                     <div class="single-ad ">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad29.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -481,7 +871,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <a href="https://amazon.in"> <img src="images/innerad30.jpg" alt=""></a>
                         </div>
                         <div class="offer-text"> 
@@ -493,7 +883,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad31.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -505,7 +895,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad32.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -517,7 +907,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad33.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -529,7 +919,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad34.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -541,7 +931,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad35.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -553,7 +943,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad36.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -565,7 +955,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad37.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -577,7 +967,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad38.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -589,7 +979,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad39.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -601,7 +991,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad40.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -613,7 +1003,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered">
                            <img src="images/innerad41.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -625,7 +1015,7 @@
                         </div>
                      </div>
                      <div class="single-ad">
-                        <div class="single-ad-img">
+                        <div class="single-ad-img make-element-flex-centered ">
                            <img src="images/innerad42.jpg" alt="">
                         </div>
                         <div class="offer-text"> 
@@ -1430,7 +1820,7 @@
                   <div style="margin-left:15px;">
                      <img src="images/innerad109.jpg"> 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1462,7 +1852,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1494,7 +1884,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color" >
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1526,7 +1916,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1558,7 +1948,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1590,7 +1980,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1622,7 +2012,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1654,7 +2044,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1686,7 +2076,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1719,7 +2109,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1751,7 +2141,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1783,7 +2173,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1815,7 +2205,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1847,7 +2237,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1879,7 +2269,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1911,7 +2301,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1943,7 +2333,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -1975,7 +2365,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -2007,7 +2397,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -2039,7 +2429,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -2071,7 +2461,7 @@
                   <div style="margin-left:15px;" >
                      <img src="images/innerad109.jpg" > 
                      <br>
-                     <span class="font-size-bottom" style="color:rgb(24, 146, 202);">
+                     <span class="font-size-bottom offer-link-color">
                      Irobot Roomba 692 Vacuum Cleaning Robot (Black, Charcoal Grey)
                      </span> 
                      <br>
@@ -2089,7 +2479,7 @@
                      <span> <sup class="font-size-bottom">₹</sup><span style="font-size: large;">21,999.00</span>
                      </span>
                      <br>
-                     <span class="font-size-bottom" ><span>M.R.P:</span>
+                     <span class="font-size-bottom"><span>M.R.P:</span>
                      <span style="text-decoration: line-through;">
                      <span>₹<span>29,999</span></span></span>
                      </span> 
@@ -2104,7 +2494,7 @@
          <div class="sign-up-recommands make-element-flex-centered">
             <div>
                <span class="font-size-bottom">See personalized recommendations</span> <br>
-               <button class="end-ad-sign-in-btn make-border-transparent">sign in</button> <br>
+               <button class="end-ad-sign-in-btn make-border-transparent"> <strong>Sign In</strong></button> <br>
                <span style="margin-left:35px" class="font-size-top" >New customer? <a style="color:rgb(24, 146, 202);">Start here</a></span>
             </div>
          </div>
@@ -2315,42 +2705,6 @@
          </div>
       </div>
       <!-- <div>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
