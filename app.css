@@ -1056,7 +1056,7 @@ border-bottom:1px solid lightgrey;
 
 .footer-other-services-wrap {
 	margin: auto;
-	width: 1050px;
+	min-width: 1050px;
 	height: 200px;
 	text-align: center;
 }
